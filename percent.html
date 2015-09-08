@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<script type="text/javascript">
+	var start_sum = parseInt(prompt("Введите сумму вклада:"));
+	var percent = parseInt(prompt("Введите годовые проценты:"));
+	var srok = parseInt(prompt("Введите срок вклада: "));
+	var summa = start_sum;
+	for (var i = 1; i <= srok; i++) {
+		summa = summa + summa * percent / 100;
+		alert("Прошло лет: " + i + ". " + "Сумма на счету: " + summa + ".");
+	};
+</script>
